@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw_lesson_1</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        //task_1
+        let tc = +prompt("Введите температуру в градусах по Цельсию");
+        alert("Температура в  градусах по Фаренгейту: " + ((9 / 5) * tc + 32));
+
+        //task_2
+        let name = "Василий";
+        let admin = name;
+        console.log(admin);
+
+        //task_3
+        let result_1 = 10 + 10 + "10";
+        console.log(result_1);
+        let result_2 = 10 + "10" + 10;
+        console.log(result_2);
+        let result_3 = 10 + 10 + +"10";
+        console.log(result_3);
+        let result_4 = 10 / -"";
+        console.log(result_4);
+        let result_5 = 10 / +"2,5";
+        console.log(result_5);
+
+        /*
+        1. 10 плюс 10 получаем 20, 20 приводится к строковому типу("20") и склеивается с "10" - получается "2010".
+        2. 10 приводится к строковому типу("10") и склеивается с "10", получаем "1010". Последняя 10 также становиться строкой("10")
+            и склеивается с "1010", получаем "101010".
+        3.С помощью унарного плюса приводим строку "10" в число, складываем все числа и получаем 30.
+        4.Унарный минус преобразует пустую строку в минус ноль и при делении 10 на -0 получаем отрицательную бесконечность.
+        5.При попытке с помощю унарного плюса преобразовать строку "2,5" в число результатом будет NaN(т.к. дробные числа в
+            JavaScript записываются через точку), и при делении числа на NaN будет NaN.
+        */
+    </script>
+</body>
+
+</html>
